@@ -14,7 +14,7 @@ SparkSQL在大规模数据集上遇到的挑战有以下三点：一是“shuffl
 
 ## 四
 
-我们在配置shffle partition数量时，是通过设置参数spark.sql.shuffle.partition，它表示每个reduce阶段的任务数，该值默认为200。
+我们在配置shffle partition数量时，是通过设置参数spark.sql.shuffle.partitions，它表示每个reduce阶段的任务数，该值默认为200。
 
 一个spark作业可使用的cpu核心数是：executor的数量乘以每个Executor的core数，它表示可以并发执行的任务数。
 
